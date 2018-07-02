@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intelligent Data Analysis</title>
+    <link rel="stylesheet" href="semanticui/semantic.min.css">
+    <srcipt src="semanticui/semantic.min.js"></srcipt>
+    <style>
+        body {
+            font-size: 16px;
+        }
+
+        .main.container {
+            padding: 2em 0em 7em;
+        }
+
+        .masthead.segment {
+            padding: 3em 0em;
+        }
+
+        code {
+            font-size: 0.9em;
+            background: rgb(229, 230, 231);
+            border-radius: 3px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .ui.container {
+                width: 1136px;
+            }
+        }
+
+        /* .new,
+        .new-0706 {
+            background: rgba(20, 220, 0, 0.25);
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="ui masthead vertical segment">
+        <center>
+            <h1 class="ui header">Intelligent Data Analysis
+                <div class="sub header">
+                    SUSTech Summer Semester<br>Course Material and Useful Links<br>
+                    <a href="http://www.cs.bham.ac.uk/%7Epxt/">Peter Tino</a><br>
+                    <a href="mailto:P.Tino@cs.bham.ac.uk">P.Tino@cs.bham.ac.uk</a>
+                </div>
+            </h1>
+        </center>
+    </div>
+
+    <div class="main ui container">
+        <!-- Lecture Notes -->
+        <h2 class="ui dividing header">
+            Lecture Notes 📜
+        </h2>
+        <p>Here is a preliminary outline of the module structure. I will develop most of the ideas on the blackboard.</p>
+        <p><b>You are encouraged to take notes during the lectures.</b></p>
+        <table class="ui striped compact celled table">
+            <thead>
+                <tr>
+                    <th>Topic</th>
+                    <th>Resources</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Principal Component Analysis (PCA)</td>
+                    <td>
+                        <!-- PCA <a href="materials/PCA/ida_lecture_notes_PCA.pdf" target="_blank">[lec notes]</a>
+                        <br>PCA <a href="materials/PCA/pca.pdf" target="_blank">[slides]</a>
+                        <br>Demonstration of PCA and SOM (self-organizing map) <a href="materials/PCA/pca_som_demo.pdf" target="_blank">[slides]</a>
+                        <br>Covariance Matrix Example <a href="materials/PCA/covex.pdf" target="_blank">[notes]</a>
+                        <br>Boston Housing Dataset Demo (MATLAB codes) <a href="materials/PCA/boston-demo.zip" target="_blank">[zip]</a> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>Document Mining</td>
+                    <td>
+                        <!-- Doc Mining <a href="materials/Doc-Mining/ida_lecture_notes_doc_mining.pdf" target="_blank">[lec notes]</a> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>Clustering, Topographic Maps</td>
+                    <td>
+                        <!-- Clustering, Topographic Maps <a href="materials/Clustering-Topo/ida_lecture_notes_cluster_som.pdf" target="_blank">[lec notes]</a>
+                        <br>Topographic Maps of Vectorial Data <a href="materials/Clustering-Topo/topmap.pdf" target="_blank">[slides]</a> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="new-0703">Classification</span></td>
+                    <td>
+                        <!-- <span class="new-0703">
+                            Classification <a href="materials/Classification/ida_lecture_notes_classification.pdf" target="_blank">[lec notes]</a>
+                            <br>Density Modeling <a href="materials/Classification/dens_model.pdf" target="_blank">[slides]</a>
+                        </span>
+                        <br>-
+                        <span class="new-0705">
+                            <br>SVM Tutorial <a href="materials/Classification/SVM_tutorial.pdf" target="_blank">[pdf]</a>
+                            <br>Support Vector Machines (MIT OpenCourseWare) <a href="https://www.youtube.com/watch?v=_PwhiWxHK8o" target="_blank">[video]</a>
+                        </span>
+                        <br>-
+                        <span class="new-0705">
+                            <br>Logistic Regression Tutorial <a href="materials/Classification/logistic_reg.pdf" target="_blank">[pdf]</a>
+                            <br>Logistic Regression, An Introduction <a href="https://www.youtube.com/watch?v=zAULhNrnuL4" target="_blank">[video]</a>
+                        </span>
+                        <br>-
+                        <span class="new-0705">
+                            <br>Perceptron <a href="https://en.wikipedia.org/wiki/Perceptron" target="_blank">[wiki]</a>
+                            <br>Perceptron <a href="https://www.cs.utexas.edu/~teammco/misc/perceptron/" target="_blank">[demo]</a>
+                        </span> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>PageRank</td>
+                    <td>
+                        <!-- <span class="new-0706">
+                            PageRank <a href="materials/PageRank/ida_lecture_notes_page_rank.pdf" target="_blank">[lec notes]</a>
+                            <br>PageRank <a href="materials/PageRank/page_rank.pdf" target="_blank">[slides]</a>
+                        </span> -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+        <!-- Suggested Reading -->
+        <h2 class="ui dividing header">Suggested Reading 📖</h2>
+        <ul>
+            <li>
+                <b>Introductory probability theory and statistics</b>
+                <ul>
+                    <li><a href="http://www.cs.bham.ac.uk/%7Epxt/NIL/prob.stat.pdf">Notes on Probability, Statistics and Stochastic Processes</a> by <a href="http://cscs.umich.edu/%7Ecrshalizi/">Cosma Shalizi</a><br></li>
+                    <li>See also <a href="http://www.cs.bham.ac.uk/%7Epxt/NIL/matrix.cookbook.pdf">The Matrix Cookbook</a> by <a href="http://2302.dk/uni/">Kaare Brandt Petersen</a> and Michael Syskind Pedersen</li>
+                </ul>
+            </li>
+            <li>
+                <b>Principal Component Analysis</b>
+                <ul>
+                    <li><a href="#the-elements-of-stat-learning" title="See recommended books"><i>The Elements of Statistical Learning: Data Mining, Inference, and Prediction</i></a>: Section 14.5</li>
+                    <li><a href="#pattern-recognition-and-ml" title="See recommended books"><i>Pattern Recognition and Machine Learning</i></a>: Section 12.1</li>
+                    <li><a href="#principles-of-data-mining" title="See recommended books"><i>Principles of Data Mining</i></a>: Section 3.6</li>
+                    <li><a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/PCA.tutorial.pdf">tutorial by Lindsay Smith</a>: soft introduction to PCA with elementary vector and matrix algebras</li>
+                </ul>
+            </li>
+            <li>
+                <b>Text/Document Mining<span class="new-0706">, Latent Semantic Analysis (LSA)</span></b>
+                <ul>
+                    <li class="new-0703"><a href="#principles-of-data-mining" title="See recommended books"><i>Principles of Data Mining</i></a>: Section 5.3.3, 14.3</li>
+                    <li class="new-0706"><a href="http://www.cs.utk.edu/%7Elsi/">Web page devoted to LSI</a></li>
+                    <li class="new-0706"><a href="http://en.wikipedia.org/wiki/Latent_semantic_analysis">Latent Semantic Analysis on Wikipedia</a></li>
+                    <li class="new-0706">S. Deerwester et al.: <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/lsa_ind.pdf">Indexing by latent semantic analysis</a>. Journal of the American Society for Information Science, 6(41), pp. 391-407. 1999.</li>
+                    <li class="new-0706">F.R. Lopez, H. Jimenez-Salazar, D. Pinto: <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/term_selection.pdf">A Competitive Term Selection Method for Information Retrieval</a>. Computational Linguistics and Intelligent Text Processing, Lecture Notes in Computer Science Vol 4394, pp. 468-475. Springer, 2007.</li>
+                    <li class="new-0706">T. Hofmann: <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/plsa.pdf">Unsupervised Learning by Probabilistic Latent Semantic Analysis</a>. Machine Learning, 1-2(42), pp. 177-196. 2001. </li>
+                    <li class="new-0706">Y. Gong, X. Liu: <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/text_summary.pdf">Generic text summarization using relevance measure and latent semantic analysis</a>. Proceedings of the 24th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 19-25. 2001.</li>
+                </ul>
+            </li>
+            <li class="new-0703">
+                <b>Clustering, SOM</b>
+                <ul>
+                    <li><a href="#the-elements-of-stat-learning" title="See recommended books"><i>The Elements of Statistical Learning</i></a>: Section 14.3.4, 14.3.6, 14.3.9, 14.4</li>
+                    <li><a href="#principles-of-data-mining" title="See recommended books"><i>Principles of Data Mining</i></a>: Section 9.3, 9.4</li>
+                </ul>
+            </li>
+            <li class="new-0703">
+                <b>Classification</b>
+                <ul>
+                    <li><a href="#the-elements-of-stat-learning" title="See recommended books"><i>The Elements of Statistical Learning</i></a>: Section 2.3.2, 2.4, 2.6.2, 2.9</li>
+                    <li><a href="#pattern-recognition-and-ml" title="See recommended books"><i>Pattern Recognition and Machine Learning</i></a>: Section 4.1.1-3</li>
+                    <li><a href="#principles-of-data-mining" title="See recommended books"><i>Principles of Data Mining</i></a>: Section 10</li>
+                </ul>
+            </li>
+            <li class="new-0706">
+                <b>Searching the Web</b>
+                <ul>
+                    <li>M. Bianchini, M. Gori, F. Scarselli: <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/pagerank.pdf">Inside PageRank</a>. ACM Transactions on Internet Technology, 1(5), pp. 92-128. 2005.</li>
+                    <li>T.H. Haveliwala: <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/topic_pagerank.pdf">Topic-sensitive PageRank: a context-sensitive ranking algorithm for Web search</a>. IEEE Transactions on Knowledge and Data Engineering, 4(15), pp. 784-796. 2003.</li>
+                    <li>S. Kamvar et al.: <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/fast_pagerank.pdf">Extrapolation methods for accelerating PageRank computations</a>. Proceedings of the 12th international conference on World Wide Web, pp. 261-270. 2003.</li>
+                    <li>S. Kamvar et al.: <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/block_pagerank.pdf">Exploiting the Block Structure of the Web for Computing PageRank</a>. Technical report, Stanford University, 2003.</li>
+                    <li>A. Broder et al.: <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/efficient_pagerank.pdf">Efficient PageRank approximation via graph aggregation</a>. Information Retrieval, 2(9), pp. 123-138. 2006.</li>
+                </ul>
+        </ul>
+        </li>
+        <br>
+
+        <!-- Demos -->
+        <!-- <h2 class="ui dividing header">Demonstrations ⚗️</h2>
+        <p><a href="demos">here</a></p> -->
+
+        <!-- Assignment -->
+        <!-- <h2 class="ui dividing header">Assignment 📝</h2>
+        <p><a href="assignment">here</a></p> -->
+
+        <!-- Recommended Books -->
+        <h2 class="ui dividing header">Recommended Books 📚</h2>
+        <table class="ui striped compact celled table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author(s)</th>
+                    <th>Publisher, Date</th>
+                    <th width="25%">Comments</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="the-elements-of-stat-learning">The Elements of Statistical Learning: Data Mining, Inference, and Prediction</td>
+                    <td>T. Hastile, R. Tibshirani, J. Friedman</td>
+                    <td>Springer, 2009</td>
+                    <td>Comprehensive and cover many state-of-the-art statistical learning techniques and very helpful to understand the essence of Data Mining. Highly recommended for mathematically minded students.</td>
+                    <td><a href="https://link.springer.com/book/10.1007%2F978-0-387-84858-7" target="_blank">Springer link</a></td>
+                </tr>
+                <tr>
+                    <td id="principles-of-data-mining">Principles of Data Mining</td>
+                    <td>D.J. Hand, H. Mannila, P. Smyth</td>
+                    <td>MIT Press, 2003</td>
+                    <td>A nice gentle introduction to many areas of Data Mining.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td id="pattern-recognition-and-ml">Pattern Recognition and Machine Learning</td>
+                    <td>Christopher Bishop</td>
+                    <td>Springer, 2006</td>
+                    <td>You may need some sections of this book, particularly those on linear techniques (such as PCA) and generalisation.</td>
+                    <td><a href="http://110.65.147.72/NTRdrBookRetrInfo.aspx?BookRecno=1000238495" target="_blank">SUSTech library</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="ui divider"></div>
+        <p><i>Last updated: 2018/<span class="new-0702">07/02</span> <span class="new">(Marked with green background)</span></i></p>
+    </div>
+</body>
+
+</html>
