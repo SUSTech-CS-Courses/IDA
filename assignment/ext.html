@@ -1,0 +1,143 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Intelligent Data Analysis - P. Tino</title>
+</head>
+<body bgcolor="#FFFFFF">
+
+
+<font color="#111111">
+
+<a id="#ida_assignment">
+<h3><font color="#D00000">Assignment (Intelligent Data Analysis)
+</font></h3>
+</a>
+<p>
+<br>
+You can chose any data set(s) from the list bellow, but finding your own dataset to investigate is much more preferable (and you'll be rewarded)! <br>
+If you decide to go the easier route and use some of the data sets provided, un-tar the relevant file and go to the corresponding folder.<br>
+The folder contains the data set, as well as additional information
+about the data. Read the available information, especially
+description of the features (data dimensions).<br>
+You will need to clean the data, so that it contains
+only numerical features (dimensions)
+and the features are space-separated (not comma-separated.
+<br>
+
+<br>
+To make the plots informative, you should
+come up with a labelling scheme for data points.<br>
+If the data can be classified into several classes
+(find out in the data and feature description!), use that information
+as the basis for your labelling scheme.
+In that case exclude the class information
+from the data dimensions.
+<br>
+Alternatively, you can make labels out of any dimension,
+e.g. by quantising it into several intervals. For example,
+if the data dimension represents age of a person,
+you can quantise it into 5 labels (classes)
+[child, teenager, young adult, middle age, old].<br>
+Associate the data labels with different markers and
+use the markers to show what kind of data points get projected
+to different regions of the visualization plot
+(computer screen).
+
+</p><ul>
+<li> 
+Learn as much as you can about the chosen data set using the methods
+developed in the module - PCA, Clustering and SOM.
+</li>
+<li> 
+Use various data labelling schemes. 
+</li>
+<li> 
+Compare PCA with straightforward co-ordinate projections.
+</li>
+<li> 
+Compare 2-dimensional topographic maps produced by SOM with PCA obtained with 2 of the leading eigen-directions.
+</li>
+<li> 
+Illustrate the clusters obtained by clustering (on-line and batch) using SOM and PCA.
+How many clusters do you need? What groupings do the clusters represent? How do they correspond to structures identified through your labelling schemes and PCA/SOM?
+</li>
+<li> 
+Try to combine the techniques. For example, project the data onto dominant eigenvectors and then apply clustering or SOM. How do those results compare with clustering/SOM results on the original data?
+</li>
+
+</ul>
+
+<ul>
+<li>
+<font color="BROWN">Data sets:</font>
+</li>
+<ul>
+- <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/abalone.tar">abalone</a>
+<br>
+- <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/boston.tar">boston</a>
+<br>
+- <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/comp.activ.tar">comp.activ</a>
+<br>
+- <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/image.tar">image</a>
+<br>
+- <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/iris.tar">iris</a>
+<br>
+- <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/letter.tar">letter</a>
+</ul>
+</ul>
+
+Before starting to work on the assignment,
+please carefully study the <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/boston.ex.tar.gz">example</a>
+I prepared using
+the boston database.
+Un-tar the file 
+<a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/boston.ex.tar.gz">boston.ex.tar.gz</a> and go to the folder
+"BOSTON.EX". <br>
+The subfolder "FIGURES" contains all the relevant figures
+as eps or gif files.
+<br>
+Please consult the "boston.read.me" file in BOSTON.EX.<br>
+
+<br>
+In the labeling scheme,
+concentrate on more than
+one coordinate (dimension),
+e.g. in the <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/boston.ex.tar.gz">`boston example'</a>,
+consider not just the `<u>price</u>' feature,
+but run separate experiments
+with `<u>per capita crime rate in the town</u>', or 
+'<u>pupil-teacher ratio in the town</u>' instead of the 
+`<u>price</u>' coordinate).<br>
+
+<br>
+In the report describe:<br>
+- the data (10%) <br>
+- how you preprocessed the data (10%) <br>
+- What features (coordinates) did you use for labeling the
+  projected points with different markers? What questions on the data you would like to ask. (20%) <br>
+- How did you design the labeling schemes? (10%) <br>   
+- What interesting aspects of the data did you detect
+  based on the data visualisations/clustering? (25%) <br>
+- What interesting aspects of the data did you detect
+  based on  eigenvector and eigenvalue analysis of the data covariance matrix in case of PCA analysis, or codebook vector analysis in case of clustering/SOM? (25%) 
+<br>
+
+<br>
+You should demonstrate that you<br>
+- understand the data analysis techniques used<br>
+- are able to extract useful information about otherwise
+  inconceivable high-dimensional data using 
+  linear/non-linear dimensionality-reduction techniques and clustering methods.
+   
+<p>
+For examples of nice past reports developed on
+<a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/wine.tar">wine dataset</a>
+(do not use this data in your report!) using just PCA, please see reports by
+<a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/christoph_stich_ex.pdf">Christoph Stich</a> and
+<a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/josephf_preece_ex.pdf">Josephf Preece</a>.
+Many thanks Chris and Joe! 
+
+
+
+
+
+</li></body></html>

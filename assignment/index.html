@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intelligent Data Analysis - Assignment</title>
+    <link rel="stylesheet" href="../semanticui/semantic.min.css">
+    <srcipt src="../semanticui/semantic.min.js"></srcipt>
+    <style>
+        body {
+            font-size: 16px;
+        }
+
+        .main.container {
+            padding: 2em 0em 7em;
+        }
+
+        .masthead.segment {
+            padding: 3em 0em;
+        }
+
+        code {
+            font-size: 0.9em;
+            background: rgb(229, 230, 231);
+            border-radius: 3px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .ui.container {
+                width: 1136px;
+            }
+        }
+
+        /* .new-0630 {
+            background: rgba(20, 220, 0, 0.25);
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="ui masthead vertical segment">
+        <center>
+            <h1 class="ui header">Intelligent Data Analysis
+                <div class="sub header">
+                    SUSTech Summer Semester<br>Course Material and Useful Links<br>
+                    <a href="http://www.cs.bham.ac.uk/%7Epxt/">Peter Tino</a><br>
+                    <a href="mailto:P.Tino@cs.bham.ac.uk">P.Tino@cs.bham.ac.uk</a>
+                </div>
+            </h1>
+        </center>
+    </div>
+
+    <div class="main ui container">
+        <a href="../">&lt; Back to homepage</a>
+        <!-- Assignment -->
+        <h2 class="ui dividing header">Assignment 📝</h2>
+        <p><i>Last updated: 2017/06/30 <span class="new-0630">(Marked with green background)</span></i></p>
+        <p>You can choose any data set(s) from the list bellow, but finding your own dataset to investigate is much more preferable (and you'll be rewarded)!
+            <br>If you decide to go the easier route and use some of the data sets provided, un-tar the relevant file and go to the corresponding folder.
+            <br>The folder contains the data set, as well as additional information about the data. Read the available information, especially description of the features (data dimensions).
+            <br>You will need to clean the data, so that it contains only numerical features (dimensions) and the features are space-separated (not comma-separated.</p>
+        <p>To make the plots informative, you should come up with a labelling scheme for data points.
+            <br>If the data can be classified into several classes (find out in the data and feature description!), use that information as the basis for your labelling scheme. In that case exclude the class information from the data dimensions.
+            <br>Alternatively, you can make labels out of any dimension, e.g. by quantising it into several intervals. For example, if the data dimension represents age of a person, you can quantise it into 5 labels (classes) [child, teenager, young adult, middle age, old].
+            <br>Associate the data labels with different markers and use the markers to show what kind of data points get projected to different regions of the visualization plot (computer screen).</p>
+        <ul>
+            <li>Learn as much as you can about the chosen data set using the methods developed in the module - PCA, Clustering and SOM.</li>
+            <li><span class="new-0630">Be creative</span> - Use various data labelling schemes <span class="new-0630">(not just one)</span>!</li>
+            <li>Compare PCA with straightforward co-ordinate projections. <span class="new-0630">Does PCA really help you to understand the data more than just looking at plots based on pairs of co-ordinates</span>?</li>
+            <li>Compare 2-dimensional topographic maps produced by SOM with PCA obtained with 2 of the leading eigen-directions.</li>
+            <li>Illustrate the clusters obtained by clustering (on-line and batch) using SOM and PCA. <span class="new-0630">You can do this by assigning labels to the data (and thus colouring the data projections) according to cluster membership.</span> How many clusters do you need? What groupings do the clusters represent? How do they correspond to the structures identified through your labelling schemes and PCA/SOM?</li>
+            <li>Try to combine the techniques. For example, you can first project the data onto dominant eigenvectors to work in the relevant subspace containing most of the data and only then apply clustering or SOM. How do those results compare with clustering/SOM results on the original data <span class="new-6030">(without the PCA step)</span>?</li>
+        </ul>
+
+        <h3 class="ui header">Report</h3>
+        <p>In the report describe:
+            <ul>
+                <li>the data (10%)</li>
+                <li>how you preprocessed the data (10%)</li>
+                <li>What features (coordinates) did you use for labelling the projected points with different markers? What questions on the data you would ask. (20%)</li>
+                <li>How did you design the labelling schemes? (10%)</li>
+                <li>What interesting aspects of the data did you detect based on the data visualisations/clustering? (25%)</li>
+                <li>What interesting aspects of the data did you detect based on eigenvector and eigenvalue analysis of the data covariance matrix in case of PCA analysis, or codebook vector analysis in case of clustering/SOM? <span class="new-0630">Think of your own way of detecting where the topographic map had to contract/expand in the data space (this would reveal the data cluster structure). Furthermore, come up with your own way of detecting if the topographic map has a significant folding/curvature structure in the data space.</span> (25%)</li>
+            </ul>
+        </p>
+        <p>You should demonstrate that you
+            <ul>
+                <li>understand the data analysis techniques used</li>
+                <li>are able to extract useful information about otherwise inconceivable high-dimensional data using linear/non-linear dimensionality-reduction techniques and clustering methods.</li>
+            </ul>
+        </p>
+
+        <div class="ui positive message">
+            <div class="header">Please Note</div>
+            <p>You will be marked solely based on how well you used the techniques presented in the course on your data. If your data cannot be reasonably explained in 2-dimensions, or it does not have a clear cluster structure, that is fine, as long as you can clearly explain why do you think this is the case by proper use/analysis of PCA, SOM and clustering.</p>
+        </div>
+
+        <h3 class="ui header">Data sets</h3>
+        <ul>
+            <li><a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/abalone.tar">abalone</a></li>
+            <li><a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/boston.tar">boston</a></li>
+            <li><a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/comp.activ.tar">comp.activ</a></li>
+            <li><a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/image.tar">image</a></li>
+            <li><a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/iris.tar">iris</a></li>
+            <li><a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/letter.tar">letter</a></li>
+        </ul>
+
+        <h3 class="ui header">Before You Start ...</h3>
+
+        <p>Before starting to work on the assignment, please carefully study the <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/boston.ex.tar.gz">example</a> I prepared using the boston database. Un-tar the file <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/boston.ex.tar.gz">boston.ex.tar.gz</a> and go to the folder "BOSTON.EX".
+            <br>The subfolder "FIGURES" contains all the relevant figures as eps or gif files.
+            <br>Please consult the "boston.read.me" file in BOSTON.EX.</p>
+        <p>In the labelling scheme, concentrate on more than one coordinate (dimension), e.g. in the <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/boston.ex.tar.gz">`boston example'</a>, consider not just the <code>price</code> feature, but run separate experiments with <code>per capita crime rate in the town</code>, or <code>pupil-teacher ratio in the town</code> instead of the <code>price</code> coordinate).<br></p>
+
+        <p>For examples of nice past reports developed on
+            <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/wine.tar">wine dataset</a> (do not use this data in your report!) using just PCA, please see reports by
+            <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/christoph_stich_ex.pdf">Christoph Stich</a> and
+            <a href="http://www.cs.bham.ac.uk/%7Epxt/IDA/josephf_preece_ex.pdf">Josephf Preece</a>. Many thanks Chris and Joe!</p>
+        <br>
+    </div>
+</body>
+
+</html>
